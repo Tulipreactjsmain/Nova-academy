@@ -1,0 +1,809 @@
+
+Question 1 (q151):
+Text: "I enjoy creating structured approaches to chaotic situations"
+Role Mapping 1:
+- Role: Back-End Development
+- Rationale: Structure creation
+- Missing psychological trait
+-------------------
+
+
+Question 1 (q151):
+Text: "I enjoy creating structured approaches to chaotic situations"
+Role Mapping 2:
+- Role: Project Management
+- Rationale: Process organization
+- Missing psychological trait
+-------------------
+
+
+Question 1 (q151):
+Text: "I enjoy creating structured approaches to chaotic situations"
+Role Mapping 3:
+- Role: Cloud Engineering
+- Rationale: System order
+- Missing psychological trait
+-------------------
+
+
+Question 2 (q152):
+Text: "I naturally think about user emotions when organizing spaces"
+Role Mapping 1:
+- Role: UX Design
+- Rationale: Emotional design
+- Missing psychological trait
+-------------------
+
+
+Question 2 (q152):
+Text: "I naturally think about user emotions when organizing spaces"
+Role Mapping 2:
+- Role: Project Management
+- Rationale: User experience
+- Missing psychological trait
+-------------------
+
+
+Question 2 (q152):
+Text: "I naturally think about user emotions when organizing spaces"
+Role Mapping 3:
+- Role: Front-End Development
+- Rationale: Visual atmosphere
+- Missing psychological trait
+-------------------
+
+
+Question 3 (q153):
+Text: "I like analyzing how different organizational systems perform"
+Role Mapping 1:
+- Role: Data Analysis
+- Rationale: System analysis
+- Missing psychological trait
+-------------------
+
+
+Question 3 (q153):
+Text: "I like analyzing how different organizational systems perform"
+Role Mapping 2:
+- Role: Cloud Engineering
+- Rationale: Performance evaluation
+- Missing psychological trait
+-------------------
+
+
+Question 3 (q153):
+Text: "I like analyzing how different organizational systems perform"
+Role Mapping 3:
+- Role: Back-End Development
+- Rationale: Structure assessment
+- Missing psychological trait
+-------------------
+
+
+Question 4 (q154):
+Text: "I enjoy creating visually appealing organizational systems"
+Role Mapping 1:
+- Role: Front-End Development
+- Rationale: Visual organization
+- Missing psychological trait
+-------------------
+
+
+Question 4 (q154):
+Text: "I enjoy creating visually appealing organizational systems"
+Role Mapping 2:
+- Role: UX Design
+- Rationale: System aesthetics
+- Missing psychological trait
+-------------------
+
+
+Question 4 (q154):
+Text: "I enjoy creating visually appealing organizational systems"
+Role Mapping 3:
+- Role: Back-End Development
+- Rationale: Structure design
+- Missing psychological trait
+-------------------
+
+
+Question 5 (q155):
+Text: "I prefer building scalable organization methods"
+Role Mapping 1:
+- Role: Cloud Engineering
+- Rationale: Scalable design
+- Missing psychological trait
+-------------------
+
+
+Question 5 (q155):
+Text: "I prefer building scalable organization methods"
+Role Mapping 2:
+- Role: Back-End Development
+- Rationale: System architecture
+- Missing psychological trait
+-------------------
+
+
+Question 5 (q155):
+Text: "I prefer building scalable organization methods"
+Role Mapping 3:
+- Role: Project Management
+- Rationale: Growth planning
+- Missing psychological trait
+-------------------
+
+
+Question 6 (q156):
+Text: "I naturally look for patterns in organizational behavior"
+Role Mapping 1:
+- Role: Data Analysis
+- Rationale: Behavior analysis
+- Missing psychological trait
+-------------------
+
+
+Question 6 (q156):
+Text: "I naturally look for patterns in organizational behavior"
+Role Mapping 2:
+- Role: Project Management
+- Rationale: Process insight
+- Missing psychological trait
+-------------------
+
+
+Question 6 (q156):
+Text: "I naturally look for patterns in organizational behavior"
+Role Mapping 3:
+- Role: UX Design
+- Rationale: User patterns
+- Missing psychological trait
+-------------------
+
+
+Question 7 (q157):
+Text: "I enjoy designing intuitive navigation systems"
+Role Mapping 1:
+- Role: UX Design
+- Rationale: Navigation design
+- Missing psychological trait
+-------------------
+
+
+Question 7 (q157):
+Text: "I enjoy designing intuitive navigation systems"
+Role Mapping 2:
+- Role: Front-End Development
+- Rationale: Interface structure
+- Missing psychological trait
+-------------------
+
+
+Question 7 (q157):
+Text: "I enjoy designing intuitive navigation systems"
+Role Mapping 3:
+- Role: Back-End Development
+- Rationale: System architecture
+- Missing psychological trait
+-------------------
+
+
+Question 8 (q158):
+Text: "I like creating reusable organizational templates"
+Role Mapping 1:
+- Role: Back-End Development
+- Rationale: Template design
+- Missing psychological trait
+-------------------
+
+
+Question 8 (q158):
+Text: "I like creating reusable organizational templates"
+Role Mapping 2:
+- Role: Cloud Engineering
+- Rationale: System reusability
+- Missing psychological trait
+-------------------
+
+
+Question 8 (q158):
+Text: "I like creating reusable organizational templates"
+Role Mapping 3:
+- Role: Project Management
+- Rationale: Process standardization
+- Missing psychological trait
+-------------------
+
+
+Question 9 (q159):
+Text: "I prefer analyzing long-term trends in system usage"
+Role Mapping 1:
+- Role: Data Analysis
+- Rationale: Usage analysis
+- Missing psychological trait
+-------------------
+
+
+Question 9 (q159):
+Text: "I prefer analyzing long-term trends in system usage"
+Role Mapping 2:
+- Role: Cloud Engineering
+- Rationale: System evolution
+- Missing psychological trait
+-------------------
+
+
+Question 9 (q159):
+Text: "I prefer analyzing long-term trends in system usage"
+Role Mapping 3:
+- Role: Project Management
+- Rationale: Strategic planning
+- Missing psychological trait
+-------------------
+
+
+Question 10 (q160):
+Text: "I enjoy making complex organizations visually understandable"
+Role Mapping 1:
+- Role: Front-End Development
+- Rationale: Visual clarity
+- Missing psychological trait
+-------------------
+
+
+Question 10 (q160):
+Text: "I enjoy making complex organizations visually understandable"
+Role Mapping 2:
+- Role: UX Design
+- Rationale: Information design
+- Missing psychological trait
+-------------------
+
+
+Question 10 (q160):
+Text: "I enjoy making complex organizations visually understandable"
+Role Mapping 3:
+- Role: Back-End Development
+- Rationale: Structure representation
+- Missing psychological trait
+-------------------
+
+
+Question 11 (q161):
+Text: "I naturally think about how systems could fail"
+Role Mapping 1:
+- Role: Cloud Engineering
+- Rationale: Risk assessment
+- Missing psychological trait
+-------------------
+
+
+Question 11 (q161):
+Text: "I naturally think about how systems could fail"
+Role Mapping 2:
+- Role: Back-End Development
+- Rationale: System reliability
+- Missing psychological trait
+-------------------
+
+
+Question 11 (q161):
+Text: "I naturally think about how systems could fail"
+Role Mapping 3:
+- Role: Project Management
+- Rationale: Contingency planning
+- Missing psychological trait
+-------------------
+
+
+Question 12 (q162):
+Text: "I like understanding why people choose certain organizational methods"
+Role Mapping 1:
+- Role: Project Management
+- Rationale: User preference
+- Missing psychological trait
+-------------------
+
+
+Question 12 (q162):
+Text: "I like understanding why people choose certain organizational methods"
+Role Mapping 2:
+- Role: Data Analysis
+- Rationale: Behavior analysis
+- Missing psychological trait
+-------------------
+
+
+Question 12 (q162):
+Text: "I like understanding why people choose certain organizational methods"
+Role Mapping 3:
+- Role: UX Design
+- Rationale: Choice psychology
+- Missing psychological trait
+-------------------
+
+
+Question 13 (q163):
+Text: "I enjoy creating flexible organizational structures"
+Role Mapping 1:
+- Role: Back-End Development
+- Rationale: Structure design
+- Missing psychological trait
+-------------------
+
+
+Question 13 (q163):
+Text: "I enjoy creating flexible organizational structures"
+Role Mapping 2:
+- Role: Cloud Engineering
+- Rationale: System flexibility
+- Missing psychological trait
+-------------------
+
+
+Question 13 (q163):
+Text: "I enjoy creating flexible organizational structures"
+Role Mapping 3:
+- Role: Project Management
+- Rationale: Adaptability
+- Missing psychological trait
+-------------------
+
+
+Question 14 (q164):
+Text: "I prefer designing systems that guide users naturally"
+Role Mapping 1:
+- Role: UX Design
+- Rationale: Intuitive design
+- Missing psychological trait
+-------------------
+
+
+Question 14 (q164):
+Text: "I prefer designing systems that guide users naturally"
+Role Mapping 2:
+- Role: Front-End Development
+- Rationale: Interface flow
+- Missing psychological trait
+-------------------
+
+
+Question 14 (q164):
+Text: "I prefer designing systems that guide users naturally"
+Role Mapping 3:
+- Role: Project Management
+- Rationale: User guidance
+- Missing psychological trait
+-------------------
+
+
+Question 15 (q165):
+Text: "I like finding patterns in organizational challenges"
+Role Mapping 1:
+- Role: Data Analysis
+- Rationale: Pattern analysis
+- Missing psychological trait
+-------------------
+
+
+Question 15 (q165):
+Text: "I like finding patterns in organizational challenges"
+Role Mapping 2:
+- Role: Project Management
+- Rationale: Problem insight
+- Missing psychological trait
+-------------------
+
+
+Question 15 (q165):
+Text: "I like finding patterns in organizational challenges"
+Role Mapping 3:
+- Role: Cloud Engineering
+- Rationale: System improvement
+- Missing psychological trait
+-------------------
+
+
+Question 16 (q166):
+Text: "I enjoy creating visual hierarchies for complex information"
+Role Mapping 1:
+- Role: Front-End Development
+- Rationale: Visual hierarchy
+- Missing psychological trait
+-------------------
+
+
+Question 16 (q166):
+Text: "I enjoy creating visual hierarchies for complex information"
+Role Mapping 2:
+- Role: UX Design
+- Rationale: Information structure
+- Missing psychological trait
+-------------------
+
+
+Question 16 (q166):
+Text: "I enjoy creating visual hierarchies for complex information"
+Role Mapping 3:
+- Role: Data Analysis
+- Rationale: Data organization
+- Missing psychological trait
+-------------------
+
+
+Question 17 (q167):
+Text: "I naturally think about how to scale successful systems"
+Role Mapping 1:
+- Role: Cloud Engineering
+- Rationale: Scalability design
+- Missing psychological trait
+-------------------
+
+
+Question 17 (q167):
+Text: "I naturally think about how to scale successful systems"
+Role Mapping 2:
+- Role: Back-End Development
+- Rationale: System growth
+- Missing psychological trait
+-------------------
+
+
+Question 17 (q167):
+Text: "I naturally think about how to scale successful systems"
+Role Mapping 3:
+- Role: Project Management
+- Rationale: Expansion planning
+- Missing psychological trait
+-------------------
+
+
+Question 18 (q168):
+Text: "I like designing error-prevention mechanisms"
+Role Mapping 1:
+- Role: Back-End Development
+- Rationale: Prevention design
+- Missing psychological trait
+-------------------
+
+
+Question 18 (q168):
+Text: "I like designing error-prevention mechanisms"
+Role Mapping 2:
+- Role: Cloud Engineering
+- Rationale: System reliability
+- Missing psychological trait
+-------------------
+
+
+Question 18 (q168):
+Text: "I like designing error-prevention mechanisms"
+Role Mapping 3:
+- Role: UX Design
+- Rationale: User safety
+- Missing psychological trait
+-------------------
+
+
+Question 19 (q169):
+Text: "I enjoy understanding user behavior patterns"
+Role Mapping 1:
+- Role: Project Management
+- Rationale: Behavior analysis
+- Missing psychological trait
+-------------------
+
+
+Question 19 (q169):
+Text: "I enjoy understanding user behavior patterns"
+Role Mapping 2:
+- Role: UX Design
+- Rationale: User research
+- Missing psychological trait
+-------------------
+
+
+Question 19 (q169):
+Text: "I enjoy understanding user behavior patterns"
+Role Mapping 3:
+- Role: Data Analysis
+- Rationale: Pattern recognition
+- Missing psychological trait
+-------------------
+
+
+Question 20 (q170):
+Text: "I prefer finding correlations in complex datasets"
+Role Mapping 1:
+- Role: Data Analysis
+- Rationale: Data correlation
+- Missing psychological trait
+-------------------
+
+
+Question 20 (q170):
+Text: "I prefer finding correlations in complex datasets"
+Role Mapping 2:
+- Role: Back-End Development
+- Rationale: Pattern analysis
+- Missing psychological trait
+-------------------
+
+
+Question 20 (q170):
+Text: "I prefer finding correlations in complex datasets"
+Role Mapping 3:
+- Role: Project Management
+- Rationale: Insight generation
+- Missing psychological trait
+-------------------
+
+
+Question 21 (q171):
+Text: "I like creating consistent visual languages"
+Role Mapping 1:
+- Role: Front-End Development
+- Rationale: Visual consistency
+- Missing psychological trait
+-------------------
+
+
+Question 21 (q171):
+Text: "I like creating consistent visual languages"
+Role Mapping 2:
+- Role: UX Design
+- Rationale: Design systems
+- Missing psychological trait
+-------------------
+
+
+Question 21 (q171):
+Text: "I like creating consistent visual languages"
+Role Mapping 3:
+- Role: Project Management
+- Rationale: Brand coherence
+- Missing psychological trait
+-------------------
+
+
+Question 22 (q172):
+Text: "I enjoy optimizing resource distribution"
+Role Mapping 1:
+- Role: Cloud Engineering
+- Rationale: Resource optimization
+- Missing psychological trait
+-------------------
+
+
+Question 22 (q172):
+Text: "I enjoy optimizing resource distribution"
+Role Mapping 2:
+- Role: Back-End Development
+- Rationale: System efficiency
+- Missing psychological trait
+-------------------
+
+
+Question 22 (q172):
+Text: "I enjoy optimizing resource distribution"
+Role Mapping 3:
+- Role: Data Analysis
+- Rationale: Performance analysis
+- Missing psychological trait
+-------------------
+
+
+Question 23 (q173):
+Text: "I naturally think about user workflows"
+Role Mapping 1:
+- Role: UX Design
+- Rationale: Workflow design
+- Missing psychological trait
+-------------------
+
+
+Question 23 (q173):
+Text: "I naturally think about user workflows"
+Role Mapping 2:
+- Role: Project Management
+- Rationale: Process optimization
+- Missing psychological trait
+-------------------
+
+
+Question 23 (q173):
+Text: "I naturally think about user workflows"
+Role Mapping 3:
+- Role: Back-End Development
+- Rationale: System flow
+- Missing psychological trait
+-------------------
+
+
+Question 24 (q174):
+Text: "I like analyzing success patterns"
+Role Mapping 1:
+- Role: Data Analysis
+- Rationale: Success analysis
+- Missing psychological trait
+-------------------
+
+
+Question 24 (q174):
+Text: "I like analyzing success patterns"
+Role Mapping 2:
+- Role: Project Management
+- Rationale: Performance insight
+- Missing psychological trait
+-------------------
+
+
+Question 24 (q174):
+Text: "I like analyzing success patterns"
+Role Mapping 3:
+- Role: Cloud Engineering
+- Rationale: System optimization
+- Missing psychological trait
+-------------------
+
+
+Question 25 (q175):
+Text: "I enjoy creating modular system architectures"
+Role Mapping 1:
+- Role: Back-End Development
+- Rationale: Architecture design
+- Missing psychological trait
+-------------------
+
+
+Question 25 (q175):
+Text: "I enjoy creating modular system architectures"
+Role Mapping 2:
+- Role: Cloud Engineering
+- Rationale: System modularity
+- Missing psychological trait
+-------------------
+
+
+Question 25 (q175):
+Text: "I enjoy creating modular system architectures"
+Role Mapping 3:
+- Role: Front-End Development
+- Rationale: Component structure
+- Missing psychological trait
+-------------------
+
+
+Question 26 (q176):
+Text: "I prefer designing for emotional impact"
+Role Mapping 1:
+- Role: UX Design
+- Rationale: Emotional design
+- Missing psychological trait
+-------------------
+
+
+Question 26 (q176):
+Text: "I prefer designing for emotional impact"
+Role Mapping 2:
+- Role: Front-End Development
+- Rationale: Visual impact
+- Missing psychological trait
+-------------------
+
+
+Question 26 (q176):
+Text: "I prefer designing for emotional impact"
+Role Mapping 3:
+- Role: Project Management
+- Rationale: User engagement
+- Missing psychological trait
+-------------------
+
+
+Question 27 (q177):
+Text: "I naturally look for ways to automate processes"
+Role Mapping 1:
+- Role: Cloud Engineering
+- Rationale: Process automation
+- Missing psychological trait
+-------------------
+
+
+Question 27 (q177):
+Text: "I naturally look for ways to automate processes"
+Role Mapping 2:
+- Role: Back-End Development
+- Rationale: System efficiency
+- Missing psychological trait
+-------------------
+
+
+Question 27 (q177):
+Text: "I naturally look for ways to automate processes"
+Role Mapping 3:
+- Role: Data Analysis
+- Rationale: Performance optimization
+- Missing psychological trait
+-------------------
+
+
+Question 28 (q178):
+Text: "I like understanding underlying patterns in behavior"
+Role Mapping 1:
+- Role: Project Management
+- Rationale: Behavior analysis
+- Missing psychological trait
+-------------------
+
+
+Question 28 (q178):
+Text: "I like understanding underlying patterns in behavior"
+Role Mapping 2:
+- Role: Data Analysis
+- Rationale: Pattern recognition
+- Missing psychological trait
+-------------------
+
+
+Question 28 (q178):
+Text: "I like understanding underlying patterns in behavior"
+Role Mapping 3:
+- Role: UX Design
+- Rationale: User insight
+- Missing psychological trait
+-------------------
+
+
+Question 29 (q179):
+Text: "I enjoy creating visual storytelling experiences"
+Role Mapping 1:
+- Role: Front-End Development
+- Rationale: Visual narrative
+- Missing psychological trait
+-------------------
+
+
+Question 29 (q179):
+Text: "I enjoy creating visual storytelling experiences"
+Role Mapping 2:
+- Role: UX Design
+- Rationale: Story design
+- Missing psychological trait
+-------------------
+
+
+Question 29 (q179):
+Text: "I enjoy creating visual storytelling experiences"
+Role Mapping 3:
+- Role: Project Management
+- Rationale: User journey
+- Missing psychological trait
+-------------------
+
+
+Question 30 (q180):
+Text: "I prefer building fault-tolerant systems"
+Role Mapping 1:
+- Role: Back-End Development
+- Rationale: System reliability
+- Missing psychological trait
+-------------------
+
+
+Question 30 (q180):
+Text: "I prefer building fault-tolerant systems"
+Role Mapping 2:
+- Role: Cloud Engineering
+- Rationale: Error handling
+- Missing psychological trait
+-------------------
+
+
+Question 30 (q180):
+Text: "I prefer building fault-tolerant systems"
+Role Mapping 3:
+- Role: UX Design
+- Rationale: User safety
+- Missing psychological trait
+-------------------

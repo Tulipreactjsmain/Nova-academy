@@ -1,0 +1,31 @@
+.sliderContainer {
+  overflow: hidden !important;
+  position: relative;
+  width: 100%;
+  max-width: 1368px;
+  margin: 0 auto;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.sliderTrack {
+  display: flex;
+  width: calc(1368px * 2); 
+  animation: slide 30s linear infinite;
+}
+
+.sliderItem {
+  flex: 0 0 auto;
+  width: calc(100% / 14);
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      -50%
+    ); 
+  }
+}

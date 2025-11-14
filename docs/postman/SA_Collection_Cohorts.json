@@ -1,0 +1,395 @@
+{
+  "item": [
+    {
+      "name": "1. Create Cohort",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{adminToken}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Web Development Cohort 2024\",\n    \"description\": \"Learn web development from scratch\",\n    \"startDate\": \"2024-04-01T00:00:00.000Z\",\n    \"endDate\": \"2024-07-01T00:00:00.000Z\",\n    \"nextStartDate\": \"2024-08-01T00:00:00.000Z\",\n    \"capacity\": 30,\n    \"status\": \"upcoming\",\n    \"course\": \"{{courseId}}\",\n    \"instructors\": [\"John Doe\", \"Jane Smith\"]\n}"
+        },
+        "url": "{{baseUrl}}/api/cohorts"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "// Test status code",
+              "pm.test(\"Status code is 201\", () => {",
+              "    pm.response.to.have.status(201);",
+              "});",
+              "",
+              "// Test response structure",
+              "pm.test(\"Response has correct structure\", () => {",
+              "    const jsonData = pm.response.json();",
+              "    pm.expect(jsonData).to.have.property('success', true);",
+              "    pm.expect(jsonData).to.have.property('data');",
+              "    pm.expect(jsonData).to.have.property('message');",
+              "});",
+              "",
+              "// Test data validation",
+              "pm.test(\"Created cohort has required fields\", () => {",
+              "    const { data } = pm.response.json();",
+              "    pm.expect(data).to.have.property('name');",
+              "    pm.expect(data).to.have.property('startDate');",
+              "    pm.expect(data).to.have.property('course');",
+              "    pm.expect(data.capacity).to.be.at.most(50);",
+              "});",
+              "",
+              "// Save cohort ID for other tests",
+              "const { data } = pm.response.json();",
+              "if (data._id) {",
+              "    pm.environment.set('cohortId', data._id);",
+              "}"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "2. Get All Cohorts",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/api/cohorts?page=1&limit=10&showDeleted=false",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "cohorts"],
+          "query": [
+            {
+              "key": "page",
+              "value": "1"
+            },
+            {
+              "key": "limit",
+              "value": "10"
+            },
+            {
+              "key": "showDeleted",
+              "value": "false"
+            }
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "// Test status code",
+              "pm.test(\"Status code is 200\", () => {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// Test response structure",
+              "pm.test(\"Response has correct structure\", () => {",
+              "    const jsonData = pm.response.json();",
+              "    pm.expect(jsonData).to.have.property('success', true);",
+              "    pm.expect(jsonData.data).to.be.an('array');",
+              "    pm.expect(jsonData).to.have.nested.property('pagination');",
+              "    pm.expect(jsonData.pagination).to.have.all.keys(['total', 'page', 'limit', 'totalPages']);",
+              "});",
+              "",
+              "// Test cohort data structure",
+              "pm.test(\"Cohorts have correct structure\", () => {",
+              "    const { data } = pm.response.json();",
+              "    if (data.length > 0) {",
+              "        const cohort = data[0];",
+              "        pm.expect(cohort).to.have.property('name');",
+              "        pm.expect(cohort).to.have.property('startDate');",
+              "        pm.expect(cohort).to.have.property('course');",
+              "        pm.expect(cohort).to.have.property('isFull');",
+              "        pm.expect(cohort).to.have.property('availableSpots');",
+              "    }",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "3. Get Single Cohort",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/api/cohorts?id={{cohortId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "cohorts"],
+          "query": [
+            {
+              "key": "id",
+              "value": "{{cohortId}}"
+            }
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "// Test status code",
+              "pm.test(\"Status code is 200\", () => {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// Test response structure",
+              "pm.test(\"Response has correct structure\", () => {",
+              "    const jsonData = pm.response.json();",
+              "    pm.expect(jsonData).to.have.property('success', true);",
+              "    pm.expect(jsonData.data).to.have.property('cohort');",
+              "    pm.expect(jsonData.data).to.have.property('orders');",
+              "    pm.expect(jsonData.data).to.have.property('pagination');",
+              "});",
+              "",
+              "// Test cohort details",
+              "pm.test(\"Cohort has detailed information\", () => {",
+              "    const { data: { cohort } } = pm.response.json();",
+              "    pm.expect(cohort).to.have.property('name');",
+              "    pm.expect(cohort).to.have.property('startDate');",
+              "    pm.expect(cohort).to.have.property('course');",
+              "    pm.expect(cohort).to.have.property('isFull');",
+              "    pm.expect(cohort).to.have.property('availableSpots');",
+              "    pm.expect(cohort.course).to.have.property('_id');",
+              "});",
+              "",
+              "// Test orders pagination",
+              "pm.test(\"Orders are paginated\", () => {",
+              "    const { data: { pagination } } = pm.response.json();",
+              "    pm.expect(pagination).to.have.property('total');",
+              "    pm.expect(pagination).to.have.property('page');",
+              "    pm.expect(pagination).to.have.property('limit');",
+              "    pm.expect(pagination).to.have.property('totalPages');",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "4. Update Cohort",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{adminToken}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Updated Web Development Cohort 2024\",\n    \"description\": \"Updated course description\",\n    \"status\": \"active\",\n    \"capacity\": 35,\n    \"instructors\": [\"John Doe\", \"Jane Smith\", \"New Instructor\"]\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/cohorts?id={{cohortId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "cohorts"],
+          "query": [
+            {
+              "key": "id",
+              "value": "{{cohortId}}"
+            }
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "// Test status code",
+              "pm.test(\"Status code is 200\", () => {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// Test response structure",
+              "pm.test(\"Response has correct structure\", () => {",
+              "    const jsonData = pm.response.json();",
+              "    pm.expect(jsonData).to.have.property('success', true);",
+              "    pm.expect(jsonData).to.have.property('data');",
+              "    pm.expect(jsonData).to.have.property('message', 'Cohort updated successfully');",
+              "});",
+              "",
+              "// Test updated data",
+              "pm.test(\"Cohort was updated correctly\", () => {",
+              "    const { data } = pm.response.json();",
+              "    const requestBody = JSON.parse(pm.request.body.raw);",
+              "",
+              "    // Check if fields were updated",
+              "    pm.expect(data.name).to.equal(requestBody.name);",
+              "    pm.expect(data.description).to.equal(requestBody.description);",
+              "    pm.expect(data.status).to.equal(requestBody.status);",
+              "    pm.expect(data.capacity).to.equal(requestBody.capacity);",
+              "    pm.expect(data.instructors).to.deep.equal(requestBody.instructors);",
+              "});",
+              "",
+              "// Test capacity constraints",
+              "pm.test(\"Capacity is within limits\", () => {",
+              "    const { data } = pm.response.json();",
+              "    pm.expect(data.capacity).to.be.at.least(1);",
+              "    pm.expect(data.capacity).to.be.at.most(50);",
+              "});",
+              "",
+              "// Test course population",
+              "pm.test(\"Course details are populated\", () => {",
+              "    const { data } = pm.response.json();",
+              "    pm.expect(data.course).to.be.an('object');",
+              "    pm.expect(data.course).to.have.property('_id');",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "5. Restore Cohort",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{adminToken}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"restore\": true\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/cohorts?id={{cohortId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "cohorts"],
+          "query": [
+            {
+              "key": "id",
+              "value": "{{cohortId}}"
+            }
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "// Test status code",
+              "pm.test(\"Status code is 200\", () => {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// Test response structure",
+              "pm.test(\"Response has correct structure\", () => {",
+              "    const jsonData = pm.response.json();",
+              "    pm.expect(jsonData).to.have.property('success', true);",
+              "    pm.expect(jsonData).to.have.property('data');",
+              "    pm.expect(jsonData).to.have.property('message', 'Cohort restored successfully');",
+              "});",
+              "",
+              "// Test restored cohort",
+              "pm.test(\"Cohort was restored correctly\", () => {",
+              "    const { data } = pm.response.json();",
+              "    pm.expect(data.deletedAt).to.be.null;",
+              "    pm.expect(data._id).to.equal(pm.environment.get('cohortId'));",
+              "});",
+              "",
+              "// Test course population",
+              "pm.test(\"Course details are populated\", () => {",
+              "    const { data } = pm.response.json();",
+              "    pm.expect(data.course).to.be.an('object');",
+              "    pm.expect(data.course).to.have.property('_id');",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "6. Delete Cohort",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{adminToken}}"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/cohorts?id={{cohortId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "cohorts"],
+          "query": [
+            {
+              "key": "id",
+              "value": "{{cohortId}}"
+            }
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "// Test status code",
+              "pm.test(\"Status code is 200\", () => {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// Test response structure",
+              "pm.test(\"Response has correct structure\", () => {",
+              "    const jsonData = pm.response.json();",
+              "    pm.expect(jsonData).to.have.property('success', true);",
+              "    pm.expect(jsonData).to.have.property('data');",
+              "    pm.expect(jsonData).to.have.property('message', 'Cohort deleted successfully');",
+              "});",
+              "",
+              "// Test soft delete data",
+              "pm.test(\"Soft delete was successful\", () => {",
+              "    const { data } = pm.response.json();",
+              "    pm.expect(data).to.have.property('cohortId').that.equals(pm.environment.get('cohortId'));",
+              "    pm.expect(data).to.have.property('deletedAt').that.is.not.null;",
+              "});",
+              "",
+              "// Verify cohort is not accessible normally",
+              "pm.sendRequest({",
+              "    url: pm.request.url,",
+              "    method: 'GET'",
+              "}, function (err, res) {",
+              "    pm.test(\"Deleted cohort is not accessible\", () => {",
+              "        pm.expect(res).to.have.property('code', 404);",
+              "        const jsonData = res.json();",
+              "        pm.expect(jsonData.success).to.be.false;",
+              "        pm.expect(jsonData.message).to.equal('Cohort not found');",
+              "    });",
+              "});"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

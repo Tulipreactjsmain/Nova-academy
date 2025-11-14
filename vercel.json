@@ -1,0 +1,13 @@
+{
+    "git": {
+      "deploymentEnabled": {
+        "main": true,
+        "tulipman": false,
+        "ReferralCodesView": false,
+        "feature/referral-code": false,
+        "feature/recommendation-ai": false,
+        "feature/quiz-recommendation": false,
+        "feature/quiz-analytics": false
+      }
+  }
+}

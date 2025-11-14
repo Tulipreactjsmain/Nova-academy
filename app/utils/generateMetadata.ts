@@ -15,12 +15,12 @@ export function generateMetadata({
   description,
   keywords = [],
   path = "",
-  image = "/academy-cover-img.jpg",
+  image = "/Nova_GLS_logo.png",
   structuredData,
   baseTitle = "NOVA Academy",
 }: MetadataProps): Metadata {
   const baseDescription = "Learn tech skills from industry experts";
-  const baseUrl = "https://www.stardeliteacademy.com";
+  const baseUrl = "https://novaacademy.vercel.app";
 
   return {
     title: title ? `${title} | ${baseTitle}` : baseTitle,
@@ -46,7 +46,7 @@ export function generateMetadata({
       follow: true,
     },
     icons: {
-      icon: "/iconJPEG.ico",
+      icon: "/favicon.ico",
     },
     other: {
       "script:ld+json": JSON.stringify(structuredData),
